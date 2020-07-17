@@ -1,0 +1,74 @@
+header{
+  text-align: center;
+  height: 13%;
+  font-size: 1.5em;
+  background-color: gray;
+  padding-top: 1%;
+}
+.sticky-section{
+  position:-webkit-sticky;
+  position:sticky;
+  top:0px;
+  width: 100%;
+}
+nav{
+  margin-bottom: 0px;;
+  width: 100%;
+  border: 2px solid green;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  height: 10%;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+#section1{
+  margin-top: -3px;
+  padding: 10%;
+  text-align: center;
+  /* The image used */
+  background-image: url("secondImag.jpg");
+
+  /* Full height */
+  height: 30%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section2{
+  border: 2px solid green;
+  height: 20%;
+}
