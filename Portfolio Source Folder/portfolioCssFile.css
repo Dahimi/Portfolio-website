@@ -302,7 +302,7 @@ footer{
 .socialMedia{
   height: 100px;
   width: 100px;
-  transition: top 0 linear 2s;
+  transition: top 3 linear 2s;
 }
 .socialMedia:hover{
   position: relative;
