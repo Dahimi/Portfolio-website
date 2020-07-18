@@ -31,6 +31,7 @@ nav{
   border: 2px solid green;
   position: -webkit-sticky; /* Safari */
   position: sticky;
+  z-index: 5;
 }
 ul {
   list-style-type: none;
@@ -250,6 +251,7 @@ img {vertical-align: middle;}
 .project:hover{
   border : 2px solid green;
   border-radius: 2%;
+  transition: border 1 linear 2s;
 }
 img {
   display: block;
@@ -283,4 +285,40 @@ h4{
   margin-left: 10%;
   margin-bottom: 5%;
   color: green;
+}
+footer{
+    background-color: rgb(45,45,45) ;
+    width: 100%;
+}
+#contact{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  width: 100%;
+  padding: 8%;
+  padding-left: 13%;
+  margin: -3px;
+  grid-column-gap: 5%;
+}
+.socialMedia{
+  height: 100px;
+  width: 100px;
+  transition: top 0 linear 2s;
+}
+.socialMedia:hover{
+  position: relative;
+  top: 5px;
+}
+#askContact{
+  padding-top:  10%;
+  font-family: "Arial",serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2.7em;
+  text-decoration: underline;
+  color: red;
+}
+.imgContact{
+ display: block;
+ border : 1px solid white ;
+ border-radius: 20%
 }
