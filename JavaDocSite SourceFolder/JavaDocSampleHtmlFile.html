@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset = "utf-8" />
+    <link rel="stylesheet" href="JavaDocSampleStyle.css" />
+    <title > Java Documentation Sample</title>
+  </head>
+  <body>
+    <header>
+      <h1>Java Documentation</h1>
+    </header>
+    <nav>
+      <h3>Content</h3>
+      <div class="aunchorLink">
+        <a href="#Introduction">Introduction</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#What you should already know">What you should already know</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#Java and Javascript">Java and Javascript</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#Hello world">Hello world</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#Variables">Variables</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#if... else statement">if... else statement</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#Loops">While Loop</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#Objects and classes">Objects and classes</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#Instance fields and methods">Instance fields and methods</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#Inheritance">Inheritance</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#Interfaces">Interfaces</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#Abstraction and Encapsulation">Abstraction and Encapsulation</a><hr>
+      </div>
+      <div class="aunchorLink">
+        <a href="#Polymorphism">Polymorphism</a>
+      </div>
+    </nav>
+    <section>
+      <h3 id="Introduction">Introduction</h3>
+      <p>
+        Java is an object-oriented, cross platform, multi-purpose programming language produced by Sun Microsystems. First released in 1995, it was developed to be a machine independent web technology. It was based on C and C++ syntax to make it easy for programmers from those communities to learn. Since then, it has earned a prominent place in the world of computer programming.<br>
+        The Java platform is usually associated with the Java virtual machine and the Java core libraries.<br/>
+      </p>
+      <p>
+          The Java language was designed with the following properties:<br>
+          <ul>
+            <li>
+              Platform independent: Java programs use the Java virtual machine as abstraction and do not access the operating system directly. This makes Java programs highly portable. A Java program (which is standard-compliant and follows certain rules) can run unmodified on all supported platforms, e.g., Windows or Linux.
+            </li><li>
+              Object-orientated programming language: Except the primitive data types, all elements in Java are objects.
+            </li><li>
+              Strongly-typed programming language: Java is strongly-typed, e.g., the types of the used variables must be pre-defined and conversion to other objects is relatively strict, e.g., must be done in most cases by the programmer.
+            </li><li>
+              Interpreted and compiled language: Java source code is transferred into the bytecode format which does not depend on the target platform. These bytecode instructions will be interpreted by the Java Virtual machine (JVM). The JVM contains a so called Hotspot-Compiler which translates performance critical bytecode instructions into native code instructions.
+            </li>
+            Automatic memory management: Java manages the memory allocation and de-allocation for creating new objects. The program does not have direct access to the memory. The so-called garbage collector automatically deletes objects to which no active pointer exists.
+          </ul>
+      </p>
+      <h3 id="What you should already know">What you should already know</h3>
+      <p>
+        You must know at least the basics of how to use a computer, and should be able to start a command line shell. If you are new to programming then Introduction to Programming is strongly recommended. If you already know C++ or any other Object-Oriented language, Java should be easy to pick up.
+      </p>
+      <h3 id="Java and Javascript">Java and Javascript</h3>
+      <p>
+        In a nutshell, when it comes to how each language is used, Java is typically used for all server side development, while JavaScript is generally reserved for developing client side scripts for functions like validation and interactivity. There are some other key differences: <br><br>
+        <ul>
+          <li>Java code must be compiled, and JavaScript code is all-text.</li>
+          <li>Each language requires different plug-ins</li>
+          <li>JavaScript code is run on a browser only, while Java creates applications that run in a virtual machine or browser</li>
+          <li>Java is an OOP (object-oriented programming) language, and JavaScript is specifically an OOP scripting language.</li>
+        </ul>
+      </p>
+      <h3 id="Hello world">Hello world</h3>
+      <p>
+        <br>
+        <div class="code">
+                // Your First Program
+
+          class HelloWorld {
+              public static void main(String[] args) {
+                  System.out.println("Hello, World!");
+              }
+          }
+        </div>
+        If you have copied the exact code, you need to save the file name as HelloWorld.java. It's because the name of the class and filename should match in Java. <br>
+        When you run the program, the output will be:<br>
+        <div class="code">
+          Hello, World!
+        </div>
+      </p>
+      <h3 id="Variables">Variables</h3>
+      <p>
+        Variables are containers for storing data values.
+        <br>
+        In Java, there are different <i>primitive types</i> of variables, for example:<br>
+        <ul>
+          <li><em>String</em> - stores text, such as "Hello". String values are surrounded by double quotes</li>
+          <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+          <li>
+          <em>float</em> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+          <li>
+          <em>char</em> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+          <li>
+          <em>boolean</em> - stores values with two states: true or false</li>
+        </ul>
+      </p>
+      <h3 id="if... else statement">if... else statement</h3>
+      <p>
+        Use the if statement to specify a block of Java code to be executed if a condition is true.
+
+        <strong>Syntax</strong>
+        <div class="code">
+          if (<i>condition</i>) {
+            // block of code to be executed if the condition is true
+          }
+        </div>
+        In the example below, we test two values to find out if 20 is greater than 18. If the condition is true, print some text:<br>
+
+        <strong>Example</strong>
+        <div class="code">
+          if (20 > 18) {
+            System.out.println("20 is greater than 18");
+          }
+        </div>
+      </p>
+      <h3 id="Loops">While Loop</h3>
+      <p>
+        The while loop loops through a block of code as long as a specified condition is true:
+          <strong>Syntax</strong>
+          <div class="code">
+            while (<i>condition</i>) {
+              // block of code to be executed as long as the condition is true
+            }
+          </div>
+        In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:<br>
+
+          <strong>Example</strong>
+          <div class="code">
+            int i = 0;
+            while (i < 5) {
+              System.out.println(i);
+              i++;
+            }
+          </div>
+      </p>
+      <h3 id="Objects and classes">Objects and classes</h3>
+      <p>
+        Java is an object-oriented programming language.
+
+        Everything in Java is associated with classes and objects, along with its <u>attributes</u> and<u>methods</u>. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.
+        <br>
+        A Class is like an object constructor, or a "blueprint" for creating objects.
+
+        <h4>Create a Class</h4>
+        To create a class, use the keyword <span class="keyword">class</span> :
+        <div class="code">
+          public class MyClass {
+
+          }
+        </div>
+        <h4>Create an Object</h4>
+        In Java, an object is created from a class. We have already created the class named MyClass, so now we can use this to create objects.
+        <br>
+        To create an object of MyClass, specify the class name, followed by the object name, and use the keyword <span class="keyword"> new</span>:
+        <br>
+        <div class="code">
+          public class MyClass {
+            int x = 5;
+
+            public static void main(String[] args) {
+              MyClass myObj = new MyClass();
+              System.out.println(myObj.x);
+            }
+          }
+
+        </div>
+        <br> We'll look into fields and methods in the next section.
+      </p>
+      <h3 id="Instance fields and methods">Instance fields and methods</h3>
+      <p>
+        <h4> Java Fields</h4>
+        At its most basic, a Java field is a variable. This means it represents a value, such as text or a numeric value. For example, the variable isbn could be declared to hold the ISBN number of a publication. Fields are declared within classes of your code.
+          <br>
+        <div class="code">
+          public class Book {
+            String isbn;
+            String title;
+            int pageCount;
+            double price;
+          }
+        </div>
+        Note that each variable has its own type, which defines what type of data can be stored in the field. This is a requirement. The types include String, int, double, long, boolean, and others.
+      <br>
+      <h4>Java Methods</h4>
+      A method is a function. That is, it is a block of code that carries out an operation. Like fields, methods need to be inside classes. A method can accept values from other parts of the program, and they can send results back to other parts of the program.
+      <br>
+      <div class="code">
+        // Below is a method within Book
+        public void printNotice() {
+          System.out.println("I'm a Book!");
+        }
+      </div>
+      </p>
+      <h3 id="Inheritance">Inheritance</h3>
+      <p>
+        In Java, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
+        <br>
+        <em>subclass</em> (child) - the class that inherits from another class
+        <br>
+        <em>superclass</em> (parent) - the class being inherited from
+        <br>
+        To inherit from a class, use the <span class="keyword">extends</span> keyword.
+
+        In the example below, the <strong>Car</strong> class (subclass) inherits the attributes and methods from the <strong>Vehicle</strong> class (superclass):<br>
+        <strong>Example</strong>
+        <div class="code">
+          class Vehicle {
+            protected String brand = "Ford";        // Vehicle attribute
+            public void honk() {                    // Vehicle method
+              System.out.println("Tuut, tuut!");
+            }
+          }
+
+          class Car extends Vehicle {
+            private String modelName = "Mustang";    // Car attribute
+            public static void main(String[] args) {
+
+              // Create a myCar object
+              Car myCar = new Car();
+
+              // Call the honk() method (from the Vehicle class) on the myCar object
+              myCar.honk();
+
+              // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+              System.out.println(myCar.brand + " " + myCar.modelName);
+            }
+          }
+        </div>
+      </p>
+      <h3 id="Interfaces">Interfaces</h3>
+      <p>
+        In the Java programming language, an interface is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Method bodies exist only for default methods and static methods. Interfaces cannot be instantiated—they can only be implemented by classes or extended by other interfaces. <br>
+        To implement an interface, use the <span class="keyword">implements</span> keyword.
+        <br> Interfaces in general abstracts a set of <u>behaviors</u>
+        In the example below, the <strong>Bird</strong> class (subclass) implements the methods of the <strong>Flying</strong> interface (superType):<br>
+        <div class="code">
+          class Flying {
+             void fly() ;
+          }
+
+          class Bird implements Flying {
+            private String specie = "HummingBird";    // bird attribute
+            public void fly(){
+              System.out.println("I fly");
+            }
+            public static void main(String[] args) {
+
+              // Create a Bird object
+              Bird bird = new Bird();
+
+              // Call the fly() method (from the Flying interface) on the Bird object
+              myCar.fly();
+
+            }
+          }
+        </div>
+      </p>
+      <h3 id="Abstraction and Encapsulation">Abstraction and Encapsulation</h3>
+      <p>
+        <strong>Encapsulation</strong>: Wrapping code and data together into a single unit. Class is an example of encapsulation, because it wraps the method and property.
+        <br>
+        <strong>Abstraction</strong>: Hiding internal details and showing functionality only. Abstraction focus on what the object does instead of how it does. It provides generalized view of classes.
+      </p>
+      <h3 id="Polymorphism">Polymorphism</h3>
+      <p>
+        <strong>Polymorphism</strong> means "many forms", and it occurs when we have many classes that are related to each other by <strong>inheritance</strong>.
+        <br>
+        Like we specified in the previous chapter; <strong>Inheritance</strong> lets us inherit attributes and methods from another class. <strong>Polymorphism</strong> uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+        <br>
+        For example, think of a superclass called Animal that has a method called animalSound(). Subclasses of Animals could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.):
+        <br>
+        <strong>Example</strong>
+        <div class="code">
+          class Animal {
+            public void animalSound() {
+              System.out.println("The animal makes a sound");
+            }
+          }
+
+          class Pig extends Animal {
+            public void animalSound() {
+              System.out.println("The pig says: wee wee");
+            }
+          }
+
+          class Dog extends Animal {
+            public void animalSound() {
+              System.out.println("The dog says: bow wow");
+            }
+          }
+
+          class MyMainClass {
+            public static void main(String[] args) {
+              Animal myAnimal = new Animal();  // Create a Animal object
+              Animal myPig = new Pig();  // Create a Pig object
+              Animal myDog = new Dog();  // Create a Dog object
+              myAnimal.animalSound();
+              myPig.animalSound();
+              myDog.animalSound();
+            }
+          }
+        </div>
+      </p>
+    </section>
+    <footer id="footer"></footer>
+  </body>
+</html>
