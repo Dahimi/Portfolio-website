@@ -1402,7 +1402,7 @@ form input[type="submit"], form button, form input[type="reset"] {
 
 .cta {
   text-align: center;
-  color: white; }
+  color: gray; }
   .cta .cta-title {
     font-size: 60px;
     font-size: 4em;
